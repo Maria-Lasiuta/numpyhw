@@ -1,0 +1,51 @@
+import numpy as np
+
+n_arr = np.array([75.436315, 42.485583, 60.324763])
+print("Given array:")
+print(n_arr)
+  
+print("\nReplace all elements of array which are greater than 50. to 15.50")
+n_arr[n_arr > 50.] = 15.50
+  
+print("New array :\n")
+print(n_arr)
+
+
+n_arr = np.array([[45.424365, 52.458583, 10.924763],
+                  [5.74399, 50.580701, 25.382418]])
+print("Given array:")
+print(n_arr)
+  
+print("\nReplace all elements of array which are greater than 30. to 5.25")
+n_arr[n_arr > 30.] = 5.25
+  
+print("New array :\n")
+print(n_arr)
+
+n_arr = np.array([[45, 52, 10],
+                  [1, 5, 25]])
+  
+print("Given array:")
+print(n_arr)
+  
+print("\nReplace all elements of array which are \
+greater than or equal to 25 to 0")
+  
+print("else remains the same ")
+print(np.where(n_arr >= 25, 0, n_arr))
+
+
+
+np.where([[True, False], [True, True]],
+         [[1, 2], [3, 4]], [[5, 6], [7, 8]])
+
+
+
+a = np.array([[1, 2, 3], [4, 5, 6]])  
+print(a)  
+print ('Indices of elements <4') 
+b = np.where(a<4)
+print(b)
+  
+print("Elements which are <4")
+print(a[b])
